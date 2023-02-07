@@ -3,7 +3,7 @@ use std::io;
 fn main() {
 
     // array (immutable)
-    let arr = [0, 1, 2, 3, 4, 5];
+    let arr: [i32;6] = [0, 1, 2, 3, 4, 5];
 
     loop {
 
