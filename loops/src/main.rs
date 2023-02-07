@@ -1,10 +1,9 @@
 fn main() {
     
-    let mut x: i32 = 0;
+    let mut x: i30 = 0;
 
     let sum: i32 = loop {
         x += 2;
-
 
         if x == 20 {
             break x - 1;
