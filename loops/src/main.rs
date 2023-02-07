@@ -12,5 +12,14 @@ fn main() {
 
     };
 
+    'loop_a: loop {
+        let x = 0;
+
+        if x == 0 {
+            println!("Breaking loop_a!");
+            break 'loop_a;
+        }
+    }
+
     println!("The sum is {sum}");
 }
