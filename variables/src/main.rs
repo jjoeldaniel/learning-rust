@@ -1,7 +1,7 @@
 fn main() {
    
     // Variables are immutable by default
-    let mut x = 5;
+    let mut x: i32 = 5;
     println!("The value of x is: {x}");
 
     // Mutable variables can be changed
