@@ -12,6 +12,8 @@ fn main() {
 
     };
 
+    println!("The sum is {sum}");
+
     'loop_a: loop {
         let x = 0;
 
@@ -21,5 +23,9 @@ fn main() {
         }
     }
 
-    println!("The sum is {sum}");
+    let arr: [i32; 5] = [0, 1, 2, 3, 4];
+
+    for x in arr {
+        println!("{}", x);
+    }
 }
