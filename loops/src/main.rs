@@ -14,6 +14,14 @@ fn main() {
 
     println!("The sum is {sum}");
 
+    for num in 0..3 {
+        println!("{num}");
+    }
+
+    for num in (0..3).rev() {
+        println!("{num}");
+    }
+
     'loop_a: loop {
         let x = 0;
 
