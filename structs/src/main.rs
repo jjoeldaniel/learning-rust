@@ -1,11 +1,11 @@
+ struct User {
+    active: bool,
+    name: String,
+    age: u16,    
+}
+
 fn main() {
-    
-    struct User {
-        active: bool,
-        name: String,
-        age: u16,    
-    }
-    
+
     let user1 = User {
         active: true,
         name: String::from("Joel"),
@@ -17,10 +17,24 @@ fn main() {
         ..user1
     };
 
-    let name1: String = user1.name;
-    let name2: String = user2.name;
+    let user3 = build_user(String::from("David"), 35);
 
-    println!("Name 1: {name1}");
-    println!("Name 2: {name2}");
+    print_user(&user1);
+    print_user(&user2);
+    print_user(&user3);
 
+}
+
+fn print_user(user: &User) {
+     println!("Name: {}", user.name);
+     println!("Age: {}", user.age);
+     println!("Status: {}\n", user.active);
+}
+
+fn build_user(name: String, age: u16) -> User {
+    User {
+        active: true,
+        name,
+        age,
+    }
 }
