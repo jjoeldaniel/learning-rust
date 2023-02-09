@@ -19,9 +19,11 @@ fn main() {
 
     let user3 = build_user(String::from("David"), 35);
 
-    print_user(&user1);
-    print_user(&user2);
-    print_user(&user3);
+    let users = [user1, user2, user3];
+
+    for user in users {
+        print_user(&user);
+    } 
 
 }
 
